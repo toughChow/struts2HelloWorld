@@ -10,6 +10,8 @@ public class OrderAction {
 
 	public String orderList() {
 		order = new Order();
+		Order order2[] = new Order[2];
+		
 		for (int i = 1; i < 8; i++) {
 			order.setConsignee("长江" + i + "号");
 			order.setMobile("1888888888" + i);
@@ -20,6 +22,10 @@ public class OrderAction {
 				order.setReceived(true);
 			}
 			orderList.add(order);
+			
+			for (Order temp : order2) {
+				
+			}
 		}
 		return "orderList";
 	}

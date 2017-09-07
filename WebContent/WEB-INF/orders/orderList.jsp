@@ -15,7 +15,7 @@
 			<s:if test="#sta.odd">
 				<tr style="background: #eee;">
 					<td><s:property value="order.consignee" /></td>
-					<td><s:property value="order.address" /></td>
+					<td><s:property value="address" /></td>
 					<td><s:property value="order.mobile" /></td>
 					<td><input type="checkbox" checked="order.received"/></td>
 				</tr>
